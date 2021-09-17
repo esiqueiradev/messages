@@ -10,11 +10,11 @@ export class MessagesController {
 
   @Get()
   getAll() {
-    return { message: 'get all' }
+    return { message: 'get all' };
   }
 
   @Get('/:id')
   getOne(@Param('id') id: string) {
-    return { id }
+    return { id };
   }
 }
